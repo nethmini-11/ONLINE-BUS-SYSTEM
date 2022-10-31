@@ -137,9 +137,9 @@ class DashboardLogin extends Component {
                   this.login(e);
                 }}
               >
-                <div className="login-form-head">
-                  <h4>Sign In</h4>
-                  <p>Hello there, Sign in and start Using Ticketing App</p>
+                <div className="">
+                  <h4 className="hl">LOGIN</h4>
+                  
                 </div>
                 <div className="login-form-body">
                   <div className="form-gp">
@@ -153,7 +153,6 @@ class DashboardLogin extends Component {
                       value={this.state.userName}
                       required
                     />
-                    <i className="ti-email" />
                     <div className="text-danger" />
                   </div>
                   <div className="form-gp">
@@ -167,7 +166,7 @@ class DashboardLogin extends Component {
                       value={this.state.password}
                       required
                     />
-                    <i className="ti-lock" />
+                    
                     <div className="text-danger" />
                   </div>
                   {/* <div className="row mb-4 rmber-area">

@@ -86,12 +86,8 @@ class AddAccount extends Component {
                   this.addAccount(e);
                 }}
               >
-                <div className="login-form-head">
-                  <h4>Add User Account</h4>
-                  <p>
-                    Add Users to Give Access to Manage <br /> The Flash
-                    Ticketing System
-                  </p>
+                <div className="">
+                  <h4><center>Create User Account</center></h4>
                 </div>
                 <div className="login-form-body">
                   <div className="form-gp">

@@ -78,8 +78,8 @@ class PassengerViewComplain extends Component {
                                 <div className="single-table">
                                     <div className="table-responsive">
                                         <table className="table table-hover text-center">
-                                            <thead className="text-uppercase bg-theme">
-                                                <tr className="text-white">
+                                            <thead className="text-uppercase">
+                                                <tr className="text-dark">
                                                   
                                                     <th scope="col">Complain ID</th>
                                                     <th scope="col">User ID</th>

@@ -69,11 +69,12 @@
 }
 
 .card {
-    border: none;
+    border: 1px solid red;
     border-radius: 4px;
     background-color: #fff;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    box-shadow: 4px 4px 4px rgb(227, 227, 227);
 }
 
 .card:hover {
@@ -821,9 +822,12 @@ ul.breadcrumbs {
 /*-------------------- 2.4 Fact Area ------------------- */
 
 .single-report {
-    background: #fff;
+    background: #EED6D6;
     overflow: hidden;
     position: relative;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgb(211, 197, 197);
+    
 }
 
 .s-report-inner {
@@ -1039,7 +1043,7 @@ table.dbkit-table tr td {
 }
 
 .cripto-live ul li .icon.t {
-    background: #95b36e;
+    background: #191643;
 }
 
 .cripto-live ul li span {
@@ -1999,7 +2003,7 @@ p.card-text {
 /*-------------------- 16. Pagination ------------------- */
 
 .pg-color-border li a {
-    border-color: #007BFF;
+    border-color: #CD212D;
 }
 
 .pagination li a {
@@ -2105,7 +2109,7 @@ label {
 }
 
 .fw-icons a:hover {
-    color: #007BFF;
+    color: #CD212D;
 }
 
 .fw-icons a i {
@@ -2161,7 +2165,7 @@ label {
 }
 
 .icon-container:hover span {
-    color: #007BFF;
+    color: #CD212D;
 }
 
 /*-------------------- END Icons ------------------- */
@@ -2387,7 +2391,7 @@ table.dataTable thead td {
     display: inline-block;
     font-size: 15px;
     color: #fff;
-    background: #815ef6;
+    background: #5ef6e2;
     padding: 12px 19px;
     border-radius: 3px;
     text-transform: capitalize;
@@ -2416,20 +2420,30 @@ table.dataTable thead td {
     display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
+    background-color: #ffffff;
+    
 }
-
+.hl{
+    margin-top: 10px;
+    margin-left: 50px;
+}
 .login-box form {
     margin: auto;
-    width: 450px;
+    width: 750px;
     max-width: 100%;
     background: #fff;
     border-radius: 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 5px rgb(237, 237, 237);
+    
 }
 
 .login-form-head {
     text-align: center;
-    background:  #8655FC;
+    background:  black;
     padding: 50px;
+    border-radius: 10px;
+    
 }
 
 .login-form-head h4 {
@@ -2466,14 +2480,15 @@ table.dataTable thead td {
 
 .form-gp.focused label {
     top: -15px;
-    color:#7e74ff;
+    color:black;
 }
 
 .form-gp input {
-    width: 100%;
-    height: 30px;
+    width: 60%;
+    height: 40px;
     border: none;
     border-bottom: 1px solid #e6e6e6;
+    border-radius: 15px;
 }
 
 .form-gp input::-webkit-input-placeholder {
@@ -2495,7 +2510,7 @@ table.dataTable thead td {
 .form-gp i {
     position: absolute;
     right: 5px;
-    color:#7e74ff;
+    color:#CD212D;
     font-size: 16px;
 }
 
@@ -2507,21 +2522,20 @@ table.dataTable thead td {
     font-size: 13px;
 }
 
-.submit-btn-area {
-    text-align: center;
-}
+
 
 .submit-btn-area button {
-    width: 100%;
+    width: 50%;
     height: 50px;
     border: none;
-    background: #fff;
-    color: #585b5f;
+    background: #CD212D;
+    color: #ffffff;
     border-radius: 40px;
     text-transform: uppercase;
     letter-spacing: 0;
     font-weight: 600;
     font-size: 12px;
+    margin-left: 8px;
     box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -2561,7 +2575,7 @@ table.dataTable thead td {
 }
 
 .login-other a.fb-login {
-    background: #8655FC;
+    background: #CD212D;
     color: #fff;
 }
 
@@ -2641,7 +2655,7 @@ table.dataTable thead td {
 /* register 4 page */
 
 .register-bg {
-    background: url(../images/bg/singup-bg.jpg) center/cover no-repeat;
+    
     position: relative;
     z-index: 1;
 
@@ -2686,7 +2700,7 @@ table.dataTable thead td {
 }
 
 .prc-head h4 {
-    background: #805ff5;
+    background: #5ff56e;
     color: #fff;
     padding: 28px;
     letter-spacing: 0;
@@ -2714,7 +2728,7 @@ table.dataTable thead td {
 .prc-list>a {
     display: inline-block;
     margin-top: 40px;
-    background: #805ff5;
+    background: #f5cd5f;
     color: #fff;
     padding: 11px 20px;
     border-radius: 40px;
@@ -2846,7 +2860,7 @@ table.dataTable thead td {
 }
 
 .offset-menu-tab li a.active {
-    color: #853bfa;
+    color: #4bfa3b;
 }
 
 .offset-menu-tab li a:before {
@@ -2855,7 +2869,7 @@ table.dataTable thead td {
     bottom: 0;
     height: 5px;
     width: 100%;
-    background: #853bfa;
+    background: #fa8b3b;
     border-radius: 30px;
     -webkit-transition: all 0.3s cubic-bezier(0.91, 0.31, 0.31, 0.92) 0s;
     transition: all 0.3s cubic-bezier(0.91, 0.31, 0.31, 0.92) 0s;
@@ -2903,7 +2917,7 @@ table.dataTable thead td {
     text-indent: -9999px;
     width: 40px;
     height: 23px;
-    background: #1bd4a6;
+    background: #1b34d4;
     display: block;
     border-radius: 100px;
     position: relative;
@@ -3003,7 +3017,7 @@ table.dataTable thead td {
 /*-------------------- END Add Category ------------------- */
 
 .bg-theme{
-    background: #8e66f7;
+    background: black;
 }
 
 
