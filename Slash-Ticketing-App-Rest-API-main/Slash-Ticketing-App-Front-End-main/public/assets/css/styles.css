@@ -61,6 +61,7 @@
     padding-left: 280px;
     -webkit-transition: padding-left 0.3s ease 0s;
     transition: padding-left 0.3s ease 0s;
+   
 }
 
 .sbar_collapsed.page-container {
@@ -142,6 +143,7 @@
     padding: 19px 32px 20px;
     background: #303641;
     border-bottom: 1px solid #343e50;
+    height: 100px;
 }
 .sidebar-menu .logo{
     text-align: center;
@@ -2174,7 +2176,10 @@ label {
 table tr th {
     border-bottom: none;
 }
-
+.text-uppercase{
+    background-color: white;
+    border: 3px solid #CD212D;
+}
 table tr th,
 table tr td {
     border-top: 1px solid rgba(120, 130, 140, 0.13) !important;
@@ -2255,7 +2260,7 @@ table.dataTable thead td {
 }
 
 .datatable-primary .dataTables_paginate .page-item.disabled .page-link {
-    color: #9f98f7;
+    color: #f7c398;
     background-color: #f9f9f9;
     border-color: #c9c6f5;
 }

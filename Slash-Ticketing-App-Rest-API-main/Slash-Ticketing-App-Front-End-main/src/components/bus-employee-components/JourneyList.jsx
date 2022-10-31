@@ -82,8 +82,8 @@ class JourneyList extends Component {
                   <div className="single-table">
                     <div className="table-responsive">
                       <table className="table table-hover text-center">
-                        <thead className="text-uppercase bg-theme">
-                          <tr className="text-white">
+                        <thead className="text-uppercase">
+                          <tr className="text-dark">
                             <th scope="col">Index</th>
                             <th scope="col">User ID</th>
                             <th scope="col">Bus Route</th>
