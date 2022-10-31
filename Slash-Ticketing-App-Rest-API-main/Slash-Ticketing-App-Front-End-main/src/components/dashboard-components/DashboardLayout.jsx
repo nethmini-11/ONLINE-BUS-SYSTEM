@@ -441,10 +441,10 @@ class DashboardLayout extends Component {
             {/* sidebar menu area end */}
             {/* main content area start */}
             <div className="main-content">
-              {/* header area start */}
-              <div className="header-area">
+              {/* page title area start */}
+              <div className="page-title-area">
                 <div className="row align-items-center">
-                  {/* nav and search button */}
+                  <div className="col-sm-8">
                   <div className="col-md-6 col-sm-8 clearfix">
                     <div className="nav-btn pull-left">
                       <span />
@@ -459,53 +459,16 @@ class DashboardLayout extends Component {
                           placeholder="Search Here"
                           required
                         />
-                        <i className="ti-search" />
+                        <i className="ti-search red-color" />
                       </form>
                     </div>
                   </div>
-                  {/* profile info & task notification */}
-                  <div className="col-md-6 col-sm-4 clearfix">
-                    <ul className="notification-area pull-left">
-                      <Clock
-                        ticking={true}
-                        format={"dddd, MMMM Mo, YYYY | hh:mm:ss A"}
-                        style={{ fontSize: "1.5em" }}
-                      />
-                    </ul>
-
-                    <ul className="notification-area pull-right">
-                      <li id="full-view">
-                        <i className="ti-fullscreen" />
-                      </li>
-                      <li id="full-view-exit">
-                        <i className="ti-zoom-out" />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              {/* header area end */}
-              {/* page title area start */}
-              <div className="page-title-area">
-                <div className="row align-items-center">
-                  <div className="col-sm-8">
-                    <div className="breadcrumbs-area clearfix">
-                      <h4 className="page-title pull-left">Dashboard</h4>
-                      <ul className="breadcrumbs pull-left">
-                        <li>
-                          <a href="/">Home</a>
-                        </li>
-                        <li>
-                          <span>Dashboard </span>
-                        </li>
-                      </ul>
-                    </div>
                   </div>
                   <div className="col-sm-1">
                     <div className="breadcrumbs-area clearfix">
-                      <h4 className="page-title pull-left text-uppercase">
+                      {/* <h4 className="page-title pull-left text-uppercase">
                         {this.state.activeUser.role}
-                      </h4>
+                      </h4> */}
                     </div>
                   </div>
 
@@ -521,7 +484,7 @@ class DashboardLayout extends Component {
                         data-toggle="dropdown"
                       >
                         {this.state.activeUser.username}{" "}
-                        <i className="fa fa-angle-down" />
+                        <i className="fa fa-angle-down red-color" />
                       </h4>
                       <div className="dropdown-menu">
                         <a className="dropdown-item">
