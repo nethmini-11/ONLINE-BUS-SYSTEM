@@ -88,8 +88,9 @@ class InspectReport extends Component {
                                                     <th scope="col">ID</th>
                                                     <th scope="col">User ID</th>
                                                     <th scope="col">Inspected Detail ID</th>
-                                                    <th scope="col">User Type</th>
                                                     <th scope="col">Reported user (User ID / Bus ID)</th>
+                                                    <th scope="col">User Type</th>
+                                                 
                                                     <th scope="col">Remarks</th>
                                                     <th scope="col">Action</th>
                                                 </tr>

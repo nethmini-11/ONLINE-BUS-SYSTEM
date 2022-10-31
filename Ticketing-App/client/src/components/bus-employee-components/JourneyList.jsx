@@ -66,7 +66,7 @@ class JourneyList extends Component {
     if (!isLoaded) {
       return (
         <div>
-          <h4 className="header-title">Manage Your Journeis</h4>
+          <h4 className="header-title">Passenger Activities</h4>
           Loading...
         </div>
       );
@@ -78,7 +78,7 @@ class JourneyList extends Component {
             <div className="col-lg-12 mt-5">
               <div className="card">
                 <div className="card-body">
-                  <h4 className="header-title">Manage Your Journeis</h4>
+                  <h4 className="header-title">Passenger Activities</h4>
                   <div className="single-table">
                     <div className="table-responsive">
                       <table className="table table-hover text-center">

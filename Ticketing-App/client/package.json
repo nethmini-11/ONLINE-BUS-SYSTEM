@@ -20,7 +20,7 @@
     "react-live-clock": "^4.0.5",
     "react-rating-stars-component": "^1.0.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "^3.4.0",
     "react-slideshow-image": "^1.4.2",
     "react-toastify": "^6.0.5",
     "reactstrap": "^8.6.0",

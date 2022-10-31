@@ -9,9 +9,9 @@ class GenerateQr extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            busUserId: "",
-            busNo: "",
-            busRoute: "",
+            UserId: "",
+            // busNo: "",
+            // busRoute: "",
             terminal: "",
             destination: "",
             amount: "",
@@ -31,9 +31,9 @@ class GenerateQr extends Component {
             .then((json) => {
                 console.log(json);
                 this.setState({
-                    busUserId: json.id,
+                userid: json.id,
                     busRoute: json.busRoute,
-                    busNo: json.busNo
+                    contactNo: json.busNo
                 });
             }).catch(error => {
             console.log(error);
@@ -44,9 +44,9 @@ class GenerateQr extends Component {
         e.preventDefault();
         this.setState({
             qrValue: JSON.stringify({
-                busUserId: this.state.busUserId,
-                busNo: this.state.busNo,
-                busRoute: this.state.busRoute,
+                userid: this.state.userid,
+                // busNo: this.state.busNo,
+                // busRoute: this.state.busRoute,
                 terminal: this.state.terminal,
                 destination: this.state.destination,
                 amount: this.state.amount,
@@ -88,7 +88,7 @@ class GenerateQr extends Component {
                         <div className="card">
                             <div className="card-body">
                                 <div>
-                                    <h2 className="header-title">Generate QR for give Journeys Info</h2>
+                                    <h2 className="header-title">Generate QR for short term</h2>
                                 </div>
                                 <br/>
                                 <form
@@ -100,7 +100,7 @@ class GenerateQr extends Component {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">Bus User ID</label>
+                                                <label htmlFor="exampleInputEmail1">User ID</label>
                                                 <input
                                                     type="text"
                                                     className="form-control style-input"
@@ -115,7 +115,7 @@ class GenerateQr extends Component {
                                                 />
                                             </div>
 
-                                            <div className="form-group">
+                                            {/* <div className="form-group">
                                                 <label htmlFor="exampleInputEmail1">Bus No</label>
                                                 <input
                                                     type="text"
@@ -129,9 +129,9 @@ class GenerateQr extends Component {
                                                     value={this.state.busNo}
                                                     required
                                                 />
-                                            </div>
+                                            </div> */}
 
-                                            <div className="form-group">
+                                            {/* <div className="form-group">
                                                 <label htmlFor="exampleInputEmail1">Bus route</label>
                                                 <input
                                                     type="text"
@@ -145,7 +145,7 @@ class GenerateQr extends Component {
                                                     value={this.state.busRoute}
                                                     required
                                                 />
-                                            </div>
+                                            </div> */}
 
 
                                         </div>
@@ -182,11 +182,11 @@ class GenerateQr extends Component {
                                             </div>
 
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">Amount</label>
+                                                <label htmlFor="exampleInputEmail1">NIC</label>
                                                 <input
                                                     type="number"
                                                     className="form-control style-input"
-                                                    placeholder="Amount for the journey (LKR)"
+                                                    placeholder="NIC Number"
                                                     name="amount"
                                                     onChange={(event) => {
                                                         this.setState({amount: event.target.value});
