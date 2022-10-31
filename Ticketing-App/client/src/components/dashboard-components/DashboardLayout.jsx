@@ -34,6 +34,7 @@ import MainDash from "./components/MainDash";
 import AddFunds from "../passenger-components/addFunds";
 import Withdraw from "../bus-employee-components/Withdraw";
 import GenerateQr from "../bus-employee-components/GenerateQR";
+import GenerateQrlong from "../bus-employee-components/GenerateQR long";
 import EditTimetables from "../transport-manager-components/EditTimetables";
 import EditInvalidTickets from "../inspector-components/EditInvalidTickets";
 import EditInspectedBuses from "../inspector-components/EditInspectedBuses";
@@ -207,7 +208,7 @@ class DashboardLayout extends Component {
                           render={this.state.renderStoreManager}
                         >
                           <i className=" ti-layout-grid2" />
-                          <span>Journy Management</span>
+                          <span>Passenger Activities Management</span>
                         </a>
                         <ul className="collapse">
                           <li>
@@ -586,6 +587,12 @@ class DashboardLayout extends Component {
                   <Route path="/generateqr" exact>
                     <GenerateQr />
                   </Route>
+                  <Route path="/generateqr2" exact>
+                    <GenerateQrlong />
+                  </Route>
+
+
+
                 </Switch>
               </div>
             </div>
