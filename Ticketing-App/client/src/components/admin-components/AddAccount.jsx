@@ -88,9 +88,9 @@ class AddAccount extends Component {
                
               >
                 <div className="">
-                  <h4><center>Create User Account</center></h4>
+                  <h4 data-testid="add-account" ><center>Create User Account</center></h4>
                 </div>
-                <div className="login-form-body">
+                <div className="login-form-body" >
                   <div className="form-gp">
                     <label htmlFor="exampleInputName1">Full Name</label>
                     <input
