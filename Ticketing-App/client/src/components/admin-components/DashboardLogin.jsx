@@ -138,13 +138,14 @@ class DashboardLogin extends Component {
                 }}
               >
                 <div className="">
-                  <h4 className="hl">LOGIN</h4>
+                  <h4 className="hl" style={{marginLeft:50 ,marginTop:50}}>LOGIN</h4>
                   
                 </div>
                 <div className="login-form-body">
-                  <div className="form-gp">
+                <img src="assets/images/icon/login.png" alt="login" /><br></br>
+                  <div className="form-gp"><br></br>
                     <label htmlFor="exampleInputEmail1">Username</label>
-                    <input
+                    <input 
                       type="Username"
                       id="exampleInputEmail1"
                       onChange={(event) => {
@@ -155,7 +156,7 @@ class DashboardLogin extends Component {
                     />
                     <div className="text-danger" />
                   </div>
-                  <div className="form-gp">
+                  <div className="form-gp"><br></br>
                     <label htmlFor="exampleInputPassword1">Password</label>
                     <input
                       type="password"
