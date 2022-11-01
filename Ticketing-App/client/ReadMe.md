@@ -1,4 +1,4 @@
-# Slash-Ticketing-App
+# CSSE-Ticketing-App
 Online Ticketing System
 
 Frontend
