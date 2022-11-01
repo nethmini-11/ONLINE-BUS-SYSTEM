@@ -208,7 +208,7 @@ class DashboardLayout extends Component {
                       <li hidden={this.state.hiddenManager}>
                         <a href="javascript:void(0)" aria-expanded="true">
                           <i className=" ti-layout-grid2" />
-                          <span>Report Generate</span>
+                          <span>Statistical Analysis & Report Generation </span>
                         </a>
                         <ul className="collapse">
                           <li>
@@ -224,14 +224,7 @@ class DashboardLayout extends Component {
                           </li>
                           <li>
                             <a>
-                              <NavLink
-                                to="/piechart"
-                                exact
-                                activeStyle={{ color: "white" }}
-                              >
-                                <span>Pie Chart Report</span>
-                              </NavLink>
-
+                              
 
                               <NavLink
                                 to="/adminuserlist"
@@ -241,7 +234,13 @@ class DashboardLayout extends Component {
                                 <span>User List Report</span>
                               </NavLink>
 
-
+                              <NavLink
+                                to="/piechart"
+                                exact
+                                activeStyle={{ color: "white" }}
+                              >
+                                <span>Chart Analysis</span>
+                              </NavLink>
 
 
 
@@ -726,10 +725,7 @@ class DashboardLayout extends Component {
             {/* footer area start*/}
             <footer>
               <div className="footer-area">
-                <p>
-                  © Copyright 2020 <a href="">Ticketing App</a>. All right
-                  reserved. Developed by <a href="">Team BackSlash</a>.
-                </p>
+                
               </div>
             </footer>
             {/* footer area end*/}
