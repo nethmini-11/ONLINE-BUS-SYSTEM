@@ -87,10 +87,8 @@ export default class PaymentForm extends React.Component {
                         <div className="card">
                             <div className="card-body">
                                 <div>
-                                    <h4 className="header-title">Add Funds</h4>
-                                    <p>
-                                        Use our Secured Payment method to Add Funds... <br/>
-                                    </p>
+                                    <h4 className="header-title">Recharge Your Wallet </h4>
+                                    
                                     <br/>
                                     <br/>
                                 </div>
@@ -158,7 +156,7 @@ export default class PaymentForm extends React.Component {
                                                     className="form-control style-input"
                                                     type="text"
                                                     name="amount"
-                                                    placeholder="Amount (LKR)"
+                                                    placeholder="Amount (POINTS)"
                                                     onChange={this.handleInputChange}
                                                     onFocus={this.handleInputFocus}
                                                 />
