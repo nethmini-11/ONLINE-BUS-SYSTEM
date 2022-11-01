@@ -200,7 +200,7 @@ class DashBoard extends Component {
                       <Chart
                         options={this.state.chartOptions}
                         series={this.state.series}
-                        type="donut"
+                        type="line"
                         width="300"
                       />
                     </div>
