@@ -26,7 +26,7 @@ function save(req,res){
     
     models.InspectedBus.create(inspectedbus).then(result=>{
         res.status(201).json({
-            message: "Inspectedbus created succesfully",
+            message: "Inspected bus created successfully",
             inspectedbus: result
         });
     }).catch(error => {
