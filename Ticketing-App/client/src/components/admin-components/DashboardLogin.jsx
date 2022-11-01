@@ -66,6 +66,7 @@ class DashboardLogin extends Component {
               pauseOnHover: true,
               draggable: true,
               progress: undefined,
+              
             }
           );
         }
@@ -127,7 +128,7 @@ class DashboardLogin extends Component {
     }
     return (
       <div>
-        <ToastContainer />
+        <ToastContainer toastStyle={{ backgroundColor: "red" ,color:"black" }}/>
         <div className="login-area">
           <div className="container">
             <div className="login-box ptb--100">
