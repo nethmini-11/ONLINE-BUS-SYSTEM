@@ -171,11 +171,7 @@ class DashboardLogin extends Component {
                     
                     <div className="text-danger" />
                   </div>
-                  {/* <div className="row mb-4 rmber-area">
-                    <div className="col-6 text-right">
-                      <a href="#">Forgot Password?</a>
-                    </div>
-                  </div> */}
+                 
                   <div className="submit-btn-area">
                     <button id="form_submit" type="submit">
                       Submit <i className="ti-arrow-right" />
