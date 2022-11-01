@@ -190,7 +190,7 @@ class EditJourney extends Component {
                         <input
                           type="number"
                           className="form-control style-input"
-                          placeholder="Amount for the journey (LKR)"
+                          placeholder="Amount for the journey (POINTS)"
                           name="amount"
                           onChange={(event) => {
                             this.setState({ amount: event.target.value });
