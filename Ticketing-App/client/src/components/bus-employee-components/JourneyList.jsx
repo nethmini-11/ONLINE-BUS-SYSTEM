@@ -89,7 +89,7 @@ class JourneyList extends Component {
                             <th scope="col">Bus Route</th>
                             <th scope="col">Terminal</th>
                             <th scope="col">Destination</th>
-                            <th scope="col">Amount (LKR)</th>
+                            <th scope="col">Amount (POINTS)</th>
                             <th scope="col">Edit</th>
                             <th scope="col">Delete</th>
                           </tr>
