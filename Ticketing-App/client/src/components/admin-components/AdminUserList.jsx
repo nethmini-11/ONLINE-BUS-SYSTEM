@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import ReactToPrint from 'react-to-print';
 class AdminUserList extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +12,9 @@ class AdminUserList extends Component {
       redirect: null,
     };
   }
-
+  getRedirectButton = () => {
+    // return <button type="button" onClick={() => { this.props.history.push("/admin/restaurants/CreateRestaurant") }} className="view1">Create Restaurant</button>
+}
   editAction(adminUser) {
     window.sessionStorage.setItem("selectedUserID:", adminUser.id);
   }
@@ -89,6 +91,25 @@ class AdminUserList extends Component {
             <div className="col-lg-12 mt-5">
               <div className="card">
                 <div className="card-body">
+
+
+
+                <div ref={el => (this.componentRef = el)}>
+               
+        
+                <button type="button" onClick={() => { this.setState({ isGen: true }); }} className="generateRes">Genrate Report </button>
+
+
+
+
+
+
+
+
+
+
+
+
                   <h4 className="header-title">Manage Users</h4>
                   <div className="single-table">
                     <div className="table-responsive">
@@ -146,10 +167,68 @@ class AdminUserList extends Component {
                           ))}
                         </tbody>
                       </table>
-                    </div>
+                      </div>
                   </div>
                 </div>
+
+
+                  { 
+
+this.state.isGen ?     <div className="col-xl-4 col-lg-4 coin-distribution">
+    <div className="col">
+    
+        {this.getRedirectButton()}
+        <ReactToPrint
+            
+            documentTitle={"All "}
+            onAfterPrint={() => { this.setState({ isGen: false }); }}
+            trigger={() => {
+                return <button type="button" className="generatePdf">Generate PDF Now</button>
+
+
+
+
+            }}
+            content={() => this.componentRef}
+        />
+    </div>
+</div> :             <div className="row text-end">
+   
+</div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </div>
+              
             </div>
           </div>
         </div>
