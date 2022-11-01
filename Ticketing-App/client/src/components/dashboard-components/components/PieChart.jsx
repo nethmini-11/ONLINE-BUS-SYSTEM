@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
-import ReactToPrint from 'react-to-print';
-class PieChart extends Component {
+
+class DashBoard extends Component {
   constructor(props) {
     super(props);
 
@@ -17,23 +17,6 @@ class PieChart extends Component {
       series: [],
     };
   }
-  getRedirectButton = () => {
-    // return <button type="button" onClick={() => { this.props.history.push("/admin/restaurants/CreateRestaurant") }} className="view1">Create Restaurant</button>
-}
-getRedirectButton1 = () => {
-  // return <button type="button" onClick={() => { this.props.history.push("/admin/restaurants/CreateRestaurant") }} className="view1">Create Restaurant</button>
-}
-
-
-
-
-
-
-
-
-
-
-
 
   componentDidMount = () => {
     const STAT_COUNT_URL = "http://localhost:3000/dashboards/counts";
@@ -106,41 +89,12 @@ getRedirectButton1 = () => {
     } else {
       return (
         <div>
-          
           {/* Dashboard card area start */}
-          <div className="main-content-inner">
-            {/* sales report area start */}
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-            <div className="container2">
-            
+          <div className="main-content-inner"><br></br>
             <div className="row">
-
-            
-               
-                <div ref={el2 => (this.componentRef = el2)}>
-               
-        
-               
-
-
-                <div className="col-xl-12 col-lg-14 coin-distribution">
-                <div className="card h-full">
-                  <div className="card-body"> <button type="button" onClick={() => { this.setState({ isGen: true }); }} className="generateRes">Genrate Report </button>
-
-
+              <div className="col-xl-4 col-lg-4 coin-distribution">
+                <div className="card h-full"style={{ width:700 ,marginLeft:150 ,marginTop:20 }}>
+                  <div className="card-body">
                     <h4 className="header-title mb-0">
                       Inspected Bus Vs Rule Violated Bus
                     </h4>
@@ -148,77 +102,14 @@ getRedirectButton1 = () => {
                       <Chart
                         options={this.state.chartOptions}
                         series={this.state.series}
-                        type="donut"
-                        width="300"
+                        type="bar"
+                        width="600"
                       />
-
-
-
-
-
-
-{ 
-
-                    this.state.isGen ?     <div className="col-xl-4 col-lg-4 coin-distribution">
-                        <div className="col">
-                        
-                            {this.getRedirectButton()}
-                            <ReactToPrint
-                                
-                                documentTitle={"All "}
-                                onAfterPrint={() => { this.setState({ isGen: false }); }}
-                                trigger={() => {
-                                    return <button type="button" className="generatePdf">Generate PDF Now</button>
-
-
-
-     
-                                }}
-                                content={() => this.componentRef}
-                            />
-                        </div>
-                    </div> :             <div className="row text-end">
-                       
                     </div>
-                }
-                      </div>
                   </div>
                 </div>
               </div>
-              
-              
-              
-              
-              
-              
-              
-
-
-
-
-
-
-
-                </div>
-
             </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* market value area end */}
           </div>
         </div>
       );
@@ -226,4 +117,4 @@ getRedirectButton1 = () => {
   }
 }
 
-export default PieChart;
+export default DashBoard;
