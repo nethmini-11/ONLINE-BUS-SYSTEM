@@ -28,7 +28,7 @@ function save(req,res){
     
     models.Complaint.create(complaint).then(result=>{
         res.status(201).json({
-            message: "Complain created succesfully",
+            message: "Complain created successfully",
             compaint: result
         });
     }).catch(error => {
