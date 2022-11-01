@@ -65,7 +65,7 @@ class InspectReport extends Component {
         if (!isLoaded) {
             return (
                 <div>
-                    <h4 className="header-title">Manage Inspected Report details</h4>
+                    <h4 className="header-title" data-testid="report-i">Manage Inspected Report details</h4>
                 Loading...
                 </div>
             );
