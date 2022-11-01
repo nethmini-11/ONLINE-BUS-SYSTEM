@@ -129,7 +129,16 @@
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+.generateRes{
+    background-color: #CD212D;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    border: transparent;
+    margin-bottom: 30px;
 
+}
 .menu-inner {
     overflow-y: scroll;
     height: 100%;
