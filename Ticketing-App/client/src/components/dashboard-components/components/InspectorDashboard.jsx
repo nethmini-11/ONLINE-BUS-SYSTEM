@@ -62,7 +62,7 @@ class InspectorDashboard extends Component {
   render() {
     let { isLoaded, statFullDetails, inspectedBusList } = this.state;
     if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div data-testid="todo-5"  >Loading...</div>;
     } else {
       return (
         <div>
@@ -74,7 +74,7 @@ class InspectorDashboard extends Component {
                 <div className="card">
                   <div className="card-body">
                     <div className="d-sm-flex justify-content-between align-items-center">
-                      <h4 className="header-title mb-0">Inspected Bus Details</h4>
+                      <h4  className="header-title mb-0">Inspected Bus Details</h4>
                     </div>
                     <div className="market-status-table mt-4">
                       <div className="table-responsive">

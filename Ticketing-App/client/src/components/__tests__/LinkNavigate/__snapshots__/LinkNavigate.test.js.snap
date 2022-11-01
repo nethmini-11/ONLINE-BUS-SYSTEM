@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 <a
   className="normal"
-  href="https://github.com/aseemwangoo"
+  href="localhost:3001/managetimetable"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
