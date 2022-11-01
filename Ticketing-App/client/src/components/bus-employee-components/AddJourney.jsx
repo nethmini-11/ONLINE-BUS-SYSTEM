@@ -192,7 +192,7 @@ class AddJourney extends Component {
                         <div className="card">
                             <div className="card-body">
                                 <div>
-                                    <h2 className="header-title">Add Journeys</h2>
+                                    <h2 className="header-title" data-testid="add-journey">Add Journeys</h2>
                                 </div>
                                 <br/>
                                 <form
