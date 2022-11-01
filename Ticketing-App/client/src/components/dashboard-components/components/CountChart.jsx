@@ -18,10 +18,8 @@ class CountChart extends Component {
     };
   }
   getRedirectButton = () => {
-    // return <button type="button" onClick={() => { this.props.history.push("/admin/restaurants/CreateRestaurant") }} className="view1">Create Restaurant</button>
 }
 getRedirectButton1 = () => {
-  // return <button type="button" onClick={() => { this.props.history.push("/admin/restaurants/CreateRestaurant") }} className="view1">Create Restaurant</button>
 }
 
 
@@ -107,9 +105,7 @@ getRedirectButton1 = () => {
       return (
         <div>
           
-          {/* Dashboard card area start */}
           <div className="main-content-inner">
-            {/* sales report area start */}
 
 
 

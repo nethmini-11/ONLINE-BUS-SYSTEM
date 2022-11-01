@@ -192,19 +192,7 @@ class InspectorDashboard extends Component {
                                 </div>
                             </div>
                         </div>
-                        {/* market value area end */}
-                        {/* <div class="row">
-              <div class="col-lg-12 mt-5">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="header-title">Google Map</h4>
-                    <div>
-                        
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+                    
                     </div>
                 </div>
             );

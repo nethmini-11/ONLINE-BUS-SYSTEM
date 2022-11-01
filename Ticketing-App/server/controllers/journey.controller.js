@@ -11,20 +11,7 @@ function save(req, res) {
     amount: req.body.amount,
   };
 
-  //   const schema = {
-  //     busUserId: { type: "number", optional: false },
-  //     userId: { type: "number", optional: false },
-  //   };
-
-  //   const v = new Validator();
-  //   const validateResponse = v.validate(journey, schema);
-
-  //   if (validateResponse !== true) {
-  //     return res.status(400).json({
-  //       message: "Validation failed",
-  //       error: validateResponse,
-  //     });
-  //   }
+  
 
   models.Journey.create(journey)
     .then((result) => {
