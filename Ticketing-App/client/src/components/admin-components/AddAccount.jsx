@@ -77,14 +77,15 @@ class AddAccount extends Component {
     return (
       <div>
         <ToastContainer />
-        <div className="container p-0">
-          <div className="row no-gutters">
-            <div className="login-box-s2 ptb--100">
+        <div className="container p-0" >
+          <div className="row no-gutters" >
+            <div className="login-box-s2 ptb--100" >
               <form
                 autoComplete="off"
                 onSubmit={(e) => {
                   this.addAccount(e);
                 }}
+               
               >
                 <div className="">
                   <h4><center>Create User Account</center></h4>
