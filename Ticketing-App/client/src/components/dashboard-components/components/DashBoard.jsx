@@ -145,8 +145,7 @@ class DashBoard extends Component {
                 </div>
               </div>
             </div>
-            {/* sales report area end */}
-            {/* overview area start */}
+       
             <div className="row">
               <div className="col-xl-8 col-lg-8">
                 <div className="card">
@@ -208,29 +207,7 @@ class DashBoard extends Component {
                 </div>
               </div>
             </div>
-            {/* overview area end */}
-            {/* <div className="row mt-5 mb-5">
-              <div className="col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center">
-                      <h4 className="header-title mb-0">
-                        Rule Violated Passengers Vs Bus
-                      </h4>
-                    </div>
-                    <div>
-                      <Chart
-                            options={this.state.options}
-                            series={this.state.series}
-                            type="bar"
-                            width="500"
-                          />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* market value area start */}
+         
             <div className="row mt-5 mb-5">
               <div className="col-12">
                 <div className="card">
@@ -286,7 +263,6 @@ class DashBoard extends Component {
                 </div>
               </div>
             </div>
-            {/* market value area end */}
           </div>
         </div>
       );

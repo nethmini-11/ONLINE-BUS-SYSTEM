@@ -115,37 +115,7 @@ class GenerateQr extends Component {
                                                 />
                                             </div>
 
-                                            {/* <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">Bus No</label>
-                                                <input
-                                                    type="text"
-                                                    className="form-control style-input"
-                                                    placeholder="Bus No"
-                                                    name="busNo"
-                                                    readOnly="true"
-                                                    onChange={(event) => {
-                                                        this.setState({busNo: event.target.value});
-                                                    }}
-                                                    value={this.state.busNo}
-                                                    required
-                                                />
-                                            </div> */}
-
-                                            {/* <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">Bus route</label>
-                                                <input
-                                                    type="text"
-                                                    className="form-control style-input"
-                                                    placeholder="Bus Route"
-                                                    name="busRoute"
-                                                    readOnly="true"
-                                                    onChange={(event) => {
-                                                        this.setState({busRoute: event.target.value});
-                                                    }}
-                                                    value={this.state.busRoute}
-                                                    required
-                                                />
-                                            </div> */}
+                                       
 
 
                                         </div>
