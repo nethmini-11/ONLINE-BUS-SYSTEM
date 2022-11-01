@@ -1195,7 +1195,7 @@ table.dbkit-table tr td {
 }
 
 .exchange-btn button:hover {
-    background: #3c34ab;
+    background: #2e2e2f;
 }
 
 
@@ -2542,7 +2542,7 @@ table.dataTable thead td {
 }
 
 .submit-btn-area button:hover {
-    background: #2c71da;
+    background: #262728;
     color: #ffffff;
 }
 
