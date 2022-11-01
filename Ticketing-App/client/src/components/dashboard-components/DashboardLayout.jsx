@@ -174,7 +174,7 @@ class DashboardLayout extends Component {
                       </li>
                       <li hidden={this.state.hiddenManager}>
                         <a href="javascript:void(0)" aria-expanded="true">
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>User Management</span>
                         </a>
                         <ul className="collapse">
@@ -207,7 +207,7 @@ class DashboardLayout extends Component {
 
                       <li hidden={this.state.hiddenManager}>
                         <a href="javascript:void(0)" aria-expanded="true">
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Statistical Analysis & Report Generation </span>
                         </a>
                         <ul className="collapse">
@@ -282,7 +282,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Passenger Activities Management</span>
                         </a>
                         <ul className="collapse">
@@ -315,7 +315,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Inspected Buses</span>
                         </a>
                         <ul className="collapse">
@@ -348,7 +348,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Inspected Buses</span>
                         </a>
                         <ul className="collapse">
@@ -371,7 +371,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Time Tables</span>
                         </a>
                         <ul className="collapse">
@@ -416,7 +416,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Rule Violations</span>
                         </a>
                         <ul className="collapse">
@@ -449,7 +449,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Rule Violations</span>
                         </a>
                         <ul className="collapse">
@@ -472,7 +472,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Complains</span>
                         </a>
                         <ul className="collapse">
@@ -504,7 +504,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Generate QR Code</span>
                         </a>
                         <ul className="collapse">
@@ -527,7 +527,7 @@ class DashboardLayout extends Component {
                           aria-expanded="true"
                           render={this.state.renderStoreManager}
                         >
-                          <i className=" ti-layout-grid2" />
+                          <i className="ti-angle-double-right" />
                           <span>Complains</span>
                         </a>
                         <ul className="collapse">
