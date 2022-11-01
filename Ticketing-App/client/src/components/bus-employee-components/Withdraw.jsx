@@ -182,14 +182,14 @@ class Withdraw extends Component {
 
                                         <div className="col-md-4">
                                             <div className="form-group">
-                                                <label>Available Account Balance: {accBalance} &nbsp;LKR</label>
+                                                <label>Available Account Balance: {accBalance} &nbsp;POINTS</label>
                                             </div>
                                             <div className="form-group">
                                                 <input
                                                     className="form-control style-input"
                                                     type="text"
                                                     name="amount"
-                                                    placeholder="Withdraw Amount (LKR)"
+                                                    placeholder="Withdraw Amount (POINTS)"
                                                     onChange={this.handleInputChange}
                                                     onFocus={this.handleInputFocus}
                                                 />

@@ -91,7 +91,7 @@ class InspectorDashboard extends Component {
                                             <h4 className="header-title mb-0">Account Balance</h4>
                                         </div>
                                         <div className="d-flex justify-content-between pb-2">
-                                            <h1>LKR&nbsp;{balanceDetails.accountBalance}</h1>
+                                            <h1>POINTS&nbsp;{balanceDetails.accountBalance}</h1>
                                         </div>
                                     </div>
                                 </div>

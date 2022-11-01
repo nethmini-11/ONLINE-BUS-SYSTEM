@@ -278,7 +278,7 @@ class AddJourney extends Component {
                                                 <input
                                                     type="number"
                                                     className="form-control style-input"
-                                                    placeholder="Amount for the journey (LKR)"
+                                                    placeholder="Amount for the journey (POINTS)"
                                                     name="amount"
                                                     onChange={(event) => {
                                                         this.setState({amount: event.target.value});
@@ -325,7 +325,7 @@ class AddJourney extends Component {
                             <li>Bus Route : <b>{this.state.busRoute}</b></li>
                             <li>Terminal : <b>{this.state.terminal}</b></li>
                             <li>Destination : <b>{this.state.destination}</b></li>
-                            <li>Payment : <b>{this.state.amount} LKR</b></li>
+                            <li>Payment : <b>{this.state.amount} POINTS</b></li>
                         </ul>
                     </Dialog>
                 }

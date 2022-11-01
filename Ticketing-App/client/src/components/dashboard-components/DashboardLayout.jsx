@@ -27,6 +27,7 @@ import ManageTimetables from "../transport-manager-components/ManageTimetables";
 import AddInvalidTickets from "../inspector-components/AddInvalidTickets";
 import InspectReport from "../transport-manager-components/InspectReport";
 import AddComplain from "../passenger-components/AddComplain";
+import Qrgenerate from "../passenger-components/qrgeneration";
 import PassengerViewComplain from "../passenger-components/PassengerViewComplain";
 import EditComplain from "../passenger-components/EditComplain";
 import ViewComplain from "../transport-manager-components/ViewComplain";
@@ -498,7 +499,29 @@ class DashboardLayout extends Component {
                           </li>
                         </ul>
                       </li>
-
+                      <li hidden={this.state.hiddenUser}>
+                        <a
+                          href="javascript:void(0)"
+                          aria-expanded="true"
+                          render={this.state.renderStoreManager}
+                        >
+                          <i className=" ti-layout-grid2" />
+                          <span>Generate QR Code</span>
+                        </a>
+                        <ul className="collapse">
+                          <li>
+                            <a>
+                              <NavLink
+                                to="/generateqr3"
+                                activeStyle={{ color: "white" }}
+                              >
+                                <span>Generate Your QR Code</span>
+                              </NavLink>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </li>
                       <li hidden={this.state.hiddenManager}>
                         <a
                           href="javascript:void(0)"
@@ -655,6 +678,9 @@ class DashboardLayout extends Component {
                   </Route>
                   <Route path="/addcomplain" exact>
                     <AddComplain />
+                  </Route>
+                  <Route path="/generateqr3" exact>
+                    <Qrgenerate />
                   </Route>
                   <Route path="/managecomplain" exact>
                     <PassengerViewComplain />
