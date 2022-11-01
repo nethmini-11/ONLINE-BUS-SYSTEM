@@ -88,7 +88,7 @@ class AddComplain extends Component {
                                 <div>
                                     <h4 className="header-title">Report User</h4>
                                     <p>
-                                        Find something inconvenient?? Add your complain here and we'll get back to you
+                                        Find something inconvenient? Add your complain here and we'll get back to you
                                         faster! <br/>
                                     </p>
                                     <br/>
