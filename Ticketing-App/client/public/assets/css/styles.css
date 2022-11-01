@@ -1263,7 +1263,7 @@ table.dbkit-table tr td {
 }
 
 .social-links-warp a.instagram:hover i {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #171718 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1552,7 +1552,7 @@ table.dbkit-table tr td {
 
 .tm-title span.time i {
     margin-right: 5px;
-    color: #2c3cb7;
+    color: #0f0f10;
     font-size: 11px;
 }
 
@@ -1837,7 +1837,7 @@ table.dbkit-table tr td {
 
 .alert-items .alert-primary {
     color: #2a2f37;
-    background-color: #c8e1fb;
+    background-color: #CD212D;
 }
 
 .alert-items .alert-primary .alert-link {
@@ -2772,7 +2772,7 @@ table.dataTable thead td {
 .error-content h2 {
     font-size: 98px;
     font-weight: 800;
-    color: #686cdc;
+    color: #CD212D;
     margin-bottom: 28px;
     text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff, 4px 4px 0 #6569dc, 5px 5px 0 #6569dc, 6px 6px 0 #6569dc, 7px 7px 0 #6569dc;
     font-family: 'lato', sans-serif;
@@ -2784,14 +2784,14 @@ table.dataTable thead td {
 
 .error-content p {
     font-size: 17px;
-    color: #787bd8;
+    color: #CD212D;
     font-weight: 600;
 }
 
 .error-content a {
     display: inline-block;
     margin-top: 40px;
-    background: #656aea;
+    background: #CD212D;
     color: #fff;
     padding: 16px 26px;
     border-radius: 3px;
@@ -2917,7 +2917,7 @@ table.dataTable thead td {
     text-indent: -9999px;
     width: 40px;
     height: 23px;
-    background: #1b34d4;
+    background: #CD212D;
     display: block;
     border-radius: 100px;
     position: relative;
