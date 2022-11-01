@@ -94,8 +94,9 @@ class SignUp extends Component {
                     this.register(e);
                   }}
                 >
-                  <div className="login-form-head">
-                    <h4>Sign up</h4>
+                  <div >
+                  <img src="assets/images/icon/reg.png" style={{height:250 ,width:"100%" }} alt="logo" />
+                    <h4 style={{marginLeft:300 ,marginTop:50}}>Register</h4>
                   </div>
                   <div className="login-form-body">
                     <div className="form-gp">
