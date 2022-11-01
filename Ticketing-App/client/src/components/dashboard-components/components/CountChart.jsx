@@ -120,7 +120,7 @@ getRedirectButton1 = () => {
 
             <div ref={el => (this.componentRef = el)}>
 
-            <div className="card-body"> <button type="button" onClick={() => { this.setState({ isGen: true }); }} className="generateRes">Genrate Report </button>
+            <div className="card-body"> <button type="button" onClick={() => { this.setState({ isGen: true }); }} className="generateRes">Generate Report </button>
 
 
 
