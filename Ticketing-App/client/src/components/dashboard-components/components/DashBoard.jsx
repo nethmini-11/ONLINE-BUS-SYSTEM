@@ -85,7 +85,7 @@ class DashBoard extends Component {
   render() {
     let { isLoaded, statCounts, statFullDetails, statComplains } = this.state;
     if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div   data-testid="todo-3"    >Loading...</div>;
     } else {
       return (
         <div>
