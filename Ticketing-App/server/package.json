@@ -8,7 +8,7 @@
     "devStart": "nodemon server.js",
     "start": "node server.js"
   },
-  "author": "Viraj Konthasinghe",
+  "author": "Unknown",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
