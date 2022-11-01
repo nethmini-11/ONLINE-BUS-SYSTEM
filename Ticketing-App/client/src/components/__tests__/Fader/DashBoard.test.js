@@ -1,5 +1,5 @@
 import { render, screen, cleanup } from "@testing-library/react";
-import Fader from "../../Fader/Fader";
+import DashBoard from "../../dashboard-components/components/DashBoard";
 import React from 'react';
 
 import renderer from "react-test-renderer";
@@ -10,18 +10,22 @@ afterEach(() => {
 });
 
 test("should render fader component", () => {
-  render(<Fader text="test" />);
+  render(<DashBoard text="test" />);
 
-  const faderElem = screen.getByTestId("fader");
+
+
+  const faderElem =screen.getByTestId('todo-3');
+
+
 
   expect(faderElem).toBeInTheDocument();
-  expect(faderElem).toHaveTextContent("test");
-  expect(faderElem).toHaveClass("fade-in");
+  expect(faderElem).toHaveTextContent("Loading...");
+
 });
 
 test("fader matches snapshot", () => {
-  const component = renderer.create(<Fader />);
+  const component = renderer.create(<DashBoard />);
 
   let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  // expect(tree).toMatchSnapshot();
 });
