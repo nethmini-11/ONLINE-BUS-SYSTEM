@@ -183,7 +183,7 @@ this.state.isGen ?     <div className="col-xl-4 col-lg-4 coin-distribution">
             documentTitle={"All "}
             onAfterPrint={() => { this.setState({ isGen: false }); }}
             trigger={() => {
-                return <button type="button" className="generatePdf">Generate PDF Now</button>
+                return <button type="button" className="generateRes">Generate PDF Now</button>
 
 
 
