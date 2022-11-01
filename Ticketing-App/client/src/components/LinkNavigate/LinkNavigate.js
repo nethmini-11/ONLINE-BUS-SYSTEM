@@ -30,7 +30,7 @@ const LinkNavigate = ({ page, children }) => {
 };
 
 LinkNavigate.defaultProps = {
-  page: "https://github.com/aseemwangoo",
+  page: "localhost:3001/managetimetable",
 
 };
 

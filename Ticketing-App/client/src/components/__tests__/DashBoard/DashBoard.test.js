@@ -9,7 +9,7 @@ afterEach(() => {
   cleanup();
 });
 
-test("should render fader component", () => {
+test("should render DashBoard component", () => {
   render(<DashBoard text="test" />);
 
 
