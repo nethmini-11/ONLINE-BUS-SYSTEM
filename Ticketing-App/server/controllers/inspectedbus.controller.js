@@ -46,7 +46,7 @@ function show(req,res){
             res.status(200).json(result);
         }else{
             res.status(404).json({
-                message: "Inspectedbus not found"
+                message: "Inspected bus not found"
             })
         }
         
