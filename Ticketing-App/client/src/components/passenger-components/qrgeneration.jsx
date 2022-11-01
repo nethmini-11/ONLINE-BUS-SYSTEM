@@ -129,13 +129,14 @@ class Qrgenerate extends Component {
 
 <br></br>
 
-                                <div className="col-md-4">
-                                <div className="single-report mb-xs-30">
+                                <div className="col-md-4 " >
+                                <div className="single-report mb-xs-30" style={{width:400,height:300,marginLeft:100,marginTop:100 ,backgroundColor:"white"}}>
+                                <img src="assets/images/icon/ql.png" style={{height:220 ,width:400 ,border:"1px solid black"}} alt="logo" />
                                     <div className="s-report-inner pr--20 pt--30 mb-3" onClick={() => {
                                         this.qrCodeAction()
                                     }}>
                                         <div className="icon">
-                                            <i className="ti-harddrives"/>
+                                            <i className="ti-hand-point-up"/>
                                         </div>
                                         <div className="s-report-title d-flex justify-content-between">
                                             <h4 className="header-title mb-0">Short Term QR Service</h4>
@@ -147,15 +148,16 @@ class Qrgenerate extends Component {
                                 </div>
                             </div>
 
-
+                            
 
                             <div className="col-md-4">
-                                <div className="single-report mb-xs-30">
+                                <div className="single-report mb-xs-30"  style={{width:400,height:300,marginLeft:200,marginTop:100,backgroundColor:"white"}}>
+                                <img src="assets/images/icon/q.png" style={{height:220 ,width:400 ,border:"1px solid black"}}alt="logo" />
                                     <div className="s-report-inner pr--20 pt--30 mb-3" onClick={() => {
                                         this.qrCodeAction2()
                                     }}>
                                         <div className="icon">
-                                            <i className="ti-harddrives"/>
+                                            <i className="ti-hand-point-up"/>
                                         </div>
                                         <div className="s-report-title d-flex justify-content-between">
                                             <h4 className="header-title mb-0">Long term QR Service</h4>
