@@ -96,7 +96,8 @@ class SignUp extends Component {
                 >
                   <div >
                   <img src="assets/images/icon/reg.png" style={{height:250 ,width:"100%" }} alt="logo" />
-                    <h4 style={{marginLeft:300 ,marginTop:50}}>Register</h4>
+                  
+                    <h1  data-testid="todo-1" style={{marginLeft:300 ,marginTop:50}}  >Sign up</h1>
                   </div>
                   <div className="login-form-body">
                     <div className="form-gp">
