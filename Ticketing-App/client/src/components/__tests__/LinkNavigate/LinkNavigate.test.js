@@ -9,7 +9,7 @@ afterEach(() => {
 
 test("renders correctly", () => {
   const component = renderer.create(
-    <LinkNavigate page="localhost:3001/managetimetable">Made with ❤️ - Aseem</LinkNavigate>
+    <LinkNavigate page="localhost:3001/managetimetable">Link Navigate</LinkNavigate>
   );
 
   let tree = component.toJSON();
