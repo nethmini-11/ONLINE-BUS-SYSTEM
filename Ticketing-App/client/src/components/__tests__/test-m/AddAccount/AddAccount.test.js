@@ -1,5 +1,5 @@
 import{render,screen,cleanup} from '@testing-library/react'
-import AddAccount from '../../admin-components/AddAccount';
+import AddAccount from '../../../admin-components/AddAccount';
 import React from 'react';
 import "@testing-library/jest-dom";
 
