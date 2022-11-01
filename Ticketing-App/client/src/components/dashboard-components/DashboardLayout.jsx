@@ -38,7 +38,8 @@ import GenerateQrlong from "../bus-employee-components/GenerateQR long";
 import EditTimetables from "../transport-manager-components/EditTimetables";
 import EditInvalidTickets from "../inspector-components/EditInvalidTickets";
 import EditInspectedBuses from "../inspector-components/EditInspectedBuses";
-
+import CountChart from "./components/CountChart";
+import PieChart from "./components/PieChart";
 class DashboardLayout extends Component {
   constructor(props) {
     super(props);
@@ -201,6 +202,80 @@ class DashboardLayout extends Component {
                         </ul>
                       </li>
 
+
+
+                      <li hidden={this.state.hiddenManager}>
+                        <a href="javascript:void(0)" aria-expanded="true">
+                          <i className=" ti-layout-grid2" />
+                          <span>Report Generate</span>
+                        </a>
+                        <ul className="collapse">
+                          <li>
+                            <a>
+                              <NavLink
+                                to="/count"
+                                exact
+                                activeStyle={{ color: "white" }}
+                              >
+                                <span>User Count Report</span>
+                              </NavLink>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <NavLink
+                                to="/piechart"
+                                exact
+                                activeStyle={{ color: "white" }}
+                              >
+                                <span>Pie Chart Report</span>
+                              </NavLink>
+
+
+                              <NavLink
+                                to="/adminuserlist"
+                                exact
+                                activeStyle={{ color: "white" }}
+                              >
+                                <span>User List Report</span>
+                              </NavLink>
+
+
+
+
+
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                       <li hidden={this.state.hiddenBus}>
                         <a
                           href="javascript:void(0)"
@@ -308,6 +383,18 @@ class DashboardLayout extends Component {
                               >
                                 <span>Add TimeTables</span>
                               </NavLink>
+
+                              <NavLink
+                                to="/count"
+                                activeStyle={{ color: "white" }}
+                              >
+                                <span>Count Report</span>
+                              </NavLink>
+
+
+
+
+
                             </a>
                           </li>
                           <li>
@@ -589,6 +676,19 @@ class DashboardLayout extends Component {
                   </Route>
                   <Route path="/generateqr2" exact>
                     <GenerateQrlong />
+                  </Route>
+
+              
+
+                  <Route path="/count" exact>
+                    < CountChart />
+                  </Route>
+
+
+                 
+
+                  <Route path="/piechart" exact>
+                    < PieChart />
                   </Route>
 
 
