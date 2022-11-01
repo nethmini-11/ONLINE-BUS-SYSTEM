@@ -133,15 +133,15 @@ class PassengerDashboard extends Component {
                                                 <i className="ti-money"/>
                                             </div>
                                             <div className="s-report-title d-flex justify-content-between">
-                                                <h4 className="header-title mb-0">Account Balance</h4>
+                                                <h4 className="header-title mb-0">Current Balance :</h4>
                                             </div>
                                             <div className="d-flex justify-content-between pb-2">
-                                                <h1>LKR&nbsp;{balanceDetails.accountBalance}</h1>
+                                                <h1>&nbsp;{balanceDetails.accountBalance} Points</h1>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-8">
+                                {/* <div className="col-md-8">
                                     <div className="single-report mb-xs-30">
                                         <div className="s-report-inner pr--20 pt--30 mb-3">
                                             <div className="icon">
@@ -153,16 +153,16 @@ class PassengerDashboard extends Component {
                                                 </h4>
                                             </div>
                                             <div className="d-flex justify-content-between pb-2">
-                                                {/* <h1>{statCounts.foriegnCount}</h1> */}
+                                                
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
 
 <br></br>
 
-                                <div className="col-md-4">
+                                {/* <div className="col-md-4">
                                 <div className="single-report mb-xs-30">
                                     <div className="s-report-inner pr--20 pt--30 mb-3" onClick={() => {
                                         this.qrCodeAction()
@@ -173,16 +173,14 @@ class PassengerDashboard extends Component {
                                         <div className="s-report-title d-flex justify-content-between">
                                             <h4 className="header-title mb-0">Short Term QR Service</h4>
                                         </div>
-                                        {/* <div className="d-flex justify-content-between pb-2">
-                                            <h3>via QR CODE</h3>
-                                        </div> */}
+                                        
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
 
 
-                            <div className="col-md-4">
+                            {/* <div className="col-md-4">
                                 <div className="single-report mb-xs-30">
                                     <div className="s-report-inner pr--20 pt--30 mb-3" onClick={() => {
                                         this.qrCodeAction2()
@@ -193,12 +191,10 @@ class PassengerDashboard extends Component {
                                         <div className="s-report-title d-flex justify-content-between">
                                             <h4 className="header-title mb-0">Long term QR Service</h4>
                                         </div>
-                                        {/* <div className="d-flex justify-content-between pb-2">
-                                            <h3>via QR CODE</h3>
-                                        </div> */}
+                                        
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
 
 
