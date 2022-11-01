@@ -97,7 +97,7 @@ class AdminUserList extends Component {
                 <div ref={el => (this.componentRef = el)}>
                
         
-                <button type="button" onClick={() => { this.setState({ isGen: true }); }} className="generateRes">Genrate Report </button>
+                <button type="button" onClick={() => { this.setState({ isGen: true }); }} className="generateRes">Generate Report </button>
 
 
 
