@@ -101,7 +101,7 @@ class SignUp extends Component {
                   </div>
                   <div className="login-form-body">
                     <div className="form-gp">
-                      <input
+                      <input 
                         type="text"
                         id="exampleInputName1"
                         placeholder="Full Name"
@@ -146,7 +146,7 @@ class SignUp extends Component {
                     </div>
 
                     <div className="form-gp">
-                      <input
+                      <input 
                         type="text"
                         id="exampleInputUserName"
                         placeholder="User Name"
