@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-class DashBoard extends Component {
+class Chart2 extends Component {
   constructor(props) {
     super(props);
 
@@ -12,12 +12,10 @@ class DashBoard extends Component {
       statComplains: {},
       isLoaded: false,
       chartOptions: {
-        labels: ["Inspected", "Rule Violated"],
+        labels: ["Registered Local Users", "Registered Foreign Users"],
       },
       series: [],
-      
     };
-    
   }
 
   componentDidMount = () => {
@@ -28,8 +26,9 @@ class DashBoard extends Component {
     const STAT_COMPLAINS_URL = "http://localhost:3000/dashboards/complains";
 
     Promise.all([
-      fetch(STAT_COUNT_URL),
+      
       fetch(STAT_CHART_URL),
+      fetch(STAT_COUNT_URL),
       fetch(STAT_FULL_DETAILS_URL),
       fetch(STAT_COMPLAINS_URL),
     ]).then(([res1, res2, res3, res4]) => {
@@ -50,8 +49,8 @@ class DashBoard extends Component {
         .then((json) => {
           console.log("json2", json);
 
-          a.push(json.inspectedBusCount);
-          a.push(json.ruleViolatedBusCount);
+          a.push(json.localCount);
+          a.push(json.foriegnCount);
 
           this.setState({
             series: a,
@@ -82,24 +81,21 @@ class DashBoard extends Component {
         })
         .catch(console.error());
     });
-    
   };
 
   render() {
     let { isLoaded, statCounts, statFullDetails, statComplains } = this.state;
     if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div   data-testid="todo-3"    >Loading...</div>;
     } else {
       return (
-        <div>
-          {/* Dashboard card area start */}
-          <div className="main-content-inner"><br></br>
+        <div className="main-content-inner"><br></br>
             <div className="row">
               <div className="col-xl-4 col-lg-4 coin-distribution">
                 <div className="card h-full"style={{ width:700 ,marginLeft:150 ,marginTop:20 }}>
                   <div className="card-body">
                     <h4 className="header-title mb-0">
-                      Inspected Bus Vs Rule Violated Bus
+                      Local Users Vs Foriegn Users
                     </h4>
                     <div style={{ paddingTop: 50 }}>
                       <Chart
@@ -114,10 +110,10 @@ class DashBoard extends Component {
               </div>
             </div>
           </div>
-        </div>
+        
       );
     }
   }
 }
 
-export default DashBoard;
+export default Chart2;

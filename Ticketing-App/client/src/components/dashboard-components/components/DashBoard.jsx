@@ -189,20 +189,11 @@ class DashBoard extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 coin-distribution">
-                <div className="card h-full">
+              <div className="col-xl-4 col-lg-4 coin-distribution" >
+                <div className="card h-full" style={{border:"transparent",backgroundColor:"transparent",boxShadow:"0px 0px 0px 0px"}}>
                   <div className="card-body">
-                    <h4 className="header-title mb-0">
-                      Inspected Bus Vs Rule Violated Bus
-                    </h4>
-                    <div style={{ paddingTop: 50 }}>
-                      <Chart
-                        options={this.state.chartOptions}
-                        series={this.state.series}
-                        type="line"
-                        width="300"
-                      />
-                    </div>
+                    
+                  <img src="assets/images/icon/chart.png" style={{width:360,height:300}} alt="login" />
                   </div>
                 </div>
               </div>

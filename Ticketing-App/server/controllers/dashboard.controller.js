@@ -84,6 +84,8 @@ function showDashboardCharts(req, res) {
     });
 }
 
+
+
 function showDashboardComplains(req, res) {
   models.Complaint.count()
     .then((result) => {

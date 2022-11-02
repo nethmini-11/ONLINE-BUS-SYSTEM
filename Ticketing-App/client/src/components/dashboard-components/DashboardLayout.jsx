@@ -40,7 +40,8 @@ import EditTimetables from "../transport-manager-components/EditTimetables";
 import EditInvalidTickets from "../inspector-components/EditInvalidTickets";
 import EditInspectedBuses from "../inspector-components/EditInspectedBuses";
 import CountChart from "./components/CountChart";
-import PieChart from "./components/PieChart";
+import Chart2 from "./components/chart2";
+import PieChart from './components/PieChart'
 class DashboardLayout extends Component {
   constructor(props) {
     super(props);
@@ -233,15 +234,21 @@ class DashboardLayout extends Component {
                               >
                                 <span>User List Report</span>
                               </NavLink>
-
+                              <NavLink
+                                to="/chart2"
+                                exact
+                                activeStyle={{ color: "white" }}
+                              >
+                                <span>User Chart Analysis</span>
+                              </NavLink>
                               <NavLink
                                 to="/piechart"
                                 exact
                                 activeStyle={{ color: "white" }}
                               >
-                                <span>Chart Analysis</span>
+                                <span>Inspection Chart Analysis</span>
                               </NavLink>
-
+                             
 
 
 
@@ -714,6 +721,9 @@ class DashboardLayout extends Component {
 
                   <Route path="/piechart" exact>
                     < PieChart />
+                  </Route>
+                  <Route path="/chart2" exact>
+                    < Chart2 />
                   </Route>
 
 
