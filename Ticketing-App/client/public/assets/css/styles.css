@@ -476,7 +476,7 @@
 }
 
 .search-box input::-webkit-input-placeholder {
-    color: #b1a7a7;
+    color: #dcdcdc;
 }
 
 .search-box input::-moz-placeholder {
@@ -491,8 +491,8 @@
     position: absolute;
     right: 21px;
     top: 14px;
-    font-size: 14px;
-    color: #b1a7a7;
+    font-size: 18px;
+    color: #d00a0a;
 }
 
 
@@ -2063,7 +2063,7 @@ p.card-text {
 
 label {
     font-weight: 500;
-    color: #666;
+    color: rgb(60, 60, 60);
     display: inline-block;
     margin-bottom: 8px;
     margin-bottom: .5rem;
@@ -2482,7 +2482,7 @@ table.dataTable thead td {
     position: absolute;
     left: 0;
     top: 0;
-    color: #b3b2b2;
+    color: #3c3c3c;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -2501,19 +2501,19 @@ table.dataTable thead td {
 }
 
 .form-gp input::-webkit-input-placeholder {
-    color: #dad7d7;
+    color: #373837;
 }
 
 .form-gp input::-moz-placeholder {
-    color: #dad7d7;
+    color: #373837;
 }
 
 .form-gp input:-ms-input-placeholder {
-    color: #dad7d7;
+    color: #373837;
 }
 
 .form-gp input:-moz-placeholder {
-    color: #dad7d7;
+    color: #373837;
 }
 
 .form-gp i {
